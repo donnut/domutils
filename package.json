@@ -1,7 +1,7 @@
 {
   "name": "domutils",
   "version": "1.5.1",
-  "description": "utilities for working with htmlparser2's dom",
+  "description": "TypeScript compatible utilities for working with htmlparser2's dom",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -11,19 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/FB55/domutils.git"
+    "url": "git://github.com/donnut/domutils.git"
   },
   "keywords": [
     "dom",
     "htmlparser2"
   ],
   "dependencies": {
-    "dom-serializer": "0",
-    "domelementtype": "1"
+    "dom-serializer": "git://github.com/donnut/dom-serializer",
+    "domelementtype": "git://github.com/donnut/domelementtype"
   },
   "devDependencies": {
-    "htmlparser2": "~3.3.0",
-    "domhandler": "2",
+    "htmlparser2": "git://github.com/donnut/htmlparser2",
+    "domhandler": "git://github.com/donnut/domhandler",
     "jshint": "~2.3.0",
     "mocha": "~1.15.1"
   },

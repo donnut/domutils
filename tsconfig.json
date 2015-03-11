@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {},
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./lib/helpers.ts",
+        "./lib/legacy.ts",
+        "./lib/manipulation.ts",
+        "./lib/querying.ts",
+        "./lib/stringify.ts",
+        "./lib/traversal.ts"
+    ]
+}
