@@ -1,10 +1,18 @@
 {
-    "compilerOptions": {},
+    "compilerOptions": {
+        "target": "es3",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
     "filesGlob": [
         "./**/*.ts",
         "!./node_modules/**/*.ts"
     ],
     "files": [
+        "./index.ts",
         "./lib/helpers.ts",
         "./lib/legacy.ts",
         "./lib/manipulation.ts",

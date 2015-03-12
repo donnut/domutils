@@ -1,4 +1,6 @@
-import ElementType = require("domelementtype");
+import ElementTypes = require("domelementtype");
+
+var ElementType = ElementTypes.elements;
 
 export var isTag = ElementType.isTag;
 
@@ -74,15 +76,15 @@ export function getElements(options, element, recurse, limit) {
 	);
 };
 
-exports.getElementById = function(id, element, recurse){
+export function getElementById(id, element, recurse){
 	if(!Array.isArray(element)) element = [element];
 	return this.findOne(getAttribCheck("id", id), element, recurse !== false);
 };
 
-exports.getElementsByTagName = function(name, element, recurse, limit){
+export function getElementsByTagName(name, element, recurse, limit){
 	return this.filter(Checks.tag_name(name), element, recurse, limit);
 };
 
-exports.getElementsByTagType = function(type, element, recurse, limit){
+export function getElementsByTagType(type, element, recurse, limit){
 	return this.filter(Checks.tag_type(type), element, recurse, limit);
 };
